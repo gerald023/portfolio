@@ -1,0 +1,162 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+#root{
+  width: 100%;
+  height: 100%;
+  background: url('../src/assets/body-bg.png');
+}
+
+
+.nav_link:hover{
+  color: #4459dd;
+}
+.Hello::after{
+  content: ' ';
+  width: 200px;
+  height: 2px; 
+  /* transform: rotate(-90deg); */
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 1.1%;
+  background-color: black;
+}
+
+.changeDis::before {
+  content: "UI/UX Dsigner";
+  animation: animate infinite 10s;
+  padding-left: 10px;
+  font-weight: 600;
+  color: red;
+  font-size: 30px;
+}
+
+
+@keyframes animate {
+
+  0% {
+      content: "UI/UX Dsigner";
+      color: crimson;
+  }
+
+  50% {
+      content: "Profession Coder";
+      color: black;
+  }
+
+  75% {
+      content: "Web Developer";
+      color: #35832d;
+  }
+}
+
+.bannerBtn {
+              position: relative;
+              font-size: 18px;
+              font-weight: bold;
+              height: 45px;
+              padding: 10px 20px;
+              background: white;
+              overflow: hidden;
+              border-radius: 10px;
+              color: white;
+              border: 2px solid;
+              z-index: 1;
+              transition: 0.5s all ease;
+            }
+          
+            .bannerBtn:hover {
+              color: white;
+              cursor: pointer;
+              border: 0px;
+            }
+  
+            .bannerBtn:active {
+              transform: scale(0.85);
+            }
+          
+            .bannerBtn:before {
+              content: "";
+              width: 50%;
+              height: 100%;
+              margin: auto;
+              position: absolute;
+              top: 0%;
+              left: -50%;
+              top: -100%;
+              background: #4459dd;
+              transition: all 0.6s ease;
+              z-index: -1;
+            }
+            .bannerBtn:nth-child(1)::before{
+              top: 0;
+              left: 0;
+              border: 0px;
+              transform: rotate(180deg); 
+            }
+            .bannerBtn:hover:before {
+              top: 0;
+              left: 0;
+              border: 0px;
+              transform: rotate(180deg);
+            }
+            .bannerBtn:nth-child(1):hover:before{
+              top: -100%;
+              left: -50%;
+              border: 0px;
+              transform: rotate(0deg); 
+            }
+          
+            .bannerBtn:after {
+              content: "";
+              width: 50%;
+              height: 100%;
+              margin: auto;
+              position: absolute;
+              top: 0%;
+              left: 100%;
+              top: 100%;
+              background: #4458dda5;
+              transition: all 0.6s ease;
+              z-index: -1;
+            }
+            .bannerBtn:nth-child(1):after{
+              top: 0;
+                left: 50%;
+                border: 0px;
+                transform: rotate(180deg);
+            }
+            .bannerBtn:nth-child(1):hover:after{
+              top: 100%;
+                left: 100%;
+                border: 0px;
+                transform: rotate(0deg);
+            }
+            .bannerBtn:nth-child(1):hover{
+              background: white;
+              color: black;
+              border: 2px solid #4459dd;
+            }
+            .bannerBtn:hover:after {
+              top: 0;
+              left: 50%;
+              border: 0px;
+              transform: rotate(180deg);
+            }
+
+    
