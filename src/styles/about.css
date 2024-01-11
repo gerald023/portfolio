@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+
+.about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 2%;
+}
+.about .a_con{
+    width: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 0 2%;
+    animation: slidess forwards;
+    animation-timeline: view();
+    animation-range: entry ;
+}
+@keyframes slidess {
+    from{
+        scale: .8;
+        opacity: 0;
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+.a_con .img{
+    width: 50%;
+}
+.a_con .img img{
+    width: 70%;
+}
+.a_con .desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    font-family: 'Yantramanav', sans-serif;
+}
+.a_con .desc h1{
+    font-size: 45px;
+}
+.a_con .desc p{
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 23px;
+}
+.a_con .desc button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+}
+.a_con .desc button::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: -1;
+    height: 100%;
+    background: #aa4b6b; 
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); 
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); 
+    transition: all .3s ease;
+}
+.a_con .desc button:hover::before{
+    width: 0;
+    left: 0;
+}
+.a_con .desc button:hover{
+    background: transparent;
+    color: black;
+    border-color: #3b8d99;
+}
+.a_con .desc button:active{
+    transform: scale(1.2);
+}
+
+/* ABOUT US PAGE */
+main{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+/* ABOUT BANNER */
+.abt_banner{
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abt_banner .con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3b8d99;
+}

@@ -1,0 +1,95 @@
+.banner{
+    width: 100%;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    margin-top: 74px;
+}
+.banner .hero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.banner .hero .txt{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.hero .txt .title{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.hero .txt .title h1{
+    position: relative;
+    font-size: 60px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+.hero .txt .title h1::before{
+    position: absolute;
+    content: 'Gerald';
+    color: #844FEF;
+    left: -10%;
+    opacity: 0.39;
+    font-size: 190px;
+    transform: rotate(90deg);
+}
+.banner .hero .img{
+    width: 160%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.banner .curve{
+    width: 100%;
+    height: 180%;
+    position: absolute;
+    transform: rotate(-36deg);
+    top: 21%;
+    right: -33%;
+    background: #4CA1AF;  
+background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  
+background: linear-gradient(to right, #C4E0E5, #4CA1AF); 
+
+
+}
+.banner .img .heroImg{
+    position: absolute;
+    z-index: 60;
+    top: 3%;
+    left: 60%;
+    color: black;
+}
+.custom-shape-divider-top-1704367504 {
+    position: absolute;
+    top: -1%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1704367504 svg {
+    position: relative;
+    display: block;
+    width: calc(108% + 1.3px);
+    height: 155px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1704367504 .shape-fill {
+    fill: #FFFFFF;
+    border: none;
+}
+
